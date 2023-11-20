@@ -1,9 +1,7 @@
-
 /* Tailwind directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 /* resetting css style */
 * {
@@ -12,10 +10,64 @@
   box-sizing: border-box;
 }
 
-body{
-  font-family: 'Rubik', sans-serif;
+body {
+  font-family: "Rubik", sans-serif;
 }
 
 a {
   display: inline-block;
+  text-decoration: none;
 }
+
+/* .container {
+  @apply mx-12 ;
+} */
+
+/* customized content container */
+.content {
+  @apply flex flex-row px-12;
+}
+
+.main-header {
+  height: 96px;
+  background-color: #191919;
+  color: #ffff;
+}
+
+/* Section: Header */
+
+/* search bar container */
+.search-div {
+  flex-direction: row;
+  height: 40px;
+  border-radius: 24px;
+  background-color: #fff;
+  border: none;
+}
+
+/* search bar text */
+.search-text {
+  @apply placeholder:text-sm;
+  display: block;
+  flex: 1;
+  border: none;
+  outline: none;
+  color: black;
+  width: 50%;
+}
+
+/* search bar button*/
+.search-submit {
+  display: block;
+  width: 56px;
+  height: 32px;
+  
+  
+  background-size: 24px 24px;
+  border: 1px;
+  border-radius: 30px;
+}
+
+/* Section: Layout */
+
+/* Section: Footer */
